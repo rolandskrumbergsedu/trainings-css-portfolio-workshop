@@ -73,6 +73,7 @@ li {
 h1 {
     font-size: 55px;
     margin-top: 0px;
+    transition: font-size 1s ease-in;
 }
 
 h3 {
@@ -290,5 +291,101 @@ fieldset {
 
 .form-field button:hover {
     background: #33a242;
-    ;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .intro-section-container {
+        width: 90%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35px;
+
+    }
+
+    .display {
+        font-size: 48px;
+    }
+
+    .contact-form-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-container {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .display {
+        font-size: 32px;
+    }
+
+    .hello-section-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .welcome-text {
+        font-size: 18px;
+    }
+
+    #what-i-do-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .display-2 {
+        font-size: 32px;
+    }
+
+    .work-container {
+        display: block;
+    }
+
+    .contact-form-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-container {
+        display: block;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    25% {
+        transform: translateX(-150px);
+    }
+
+    50% {
+        transform: translateX(-100px);
+    }
+
+    75% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+nav ul {
+    animation-name: slidein;
+    animation-duration: 2s;
 }
